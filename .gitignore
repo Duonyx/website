@@ -20,3 +20,8 @@
 # Go workspace file
 go.work
 go.work.sum
+
+# Directories dynamically managed by Hugo framework
+public/
+resources/
+.hugo_build.lock
