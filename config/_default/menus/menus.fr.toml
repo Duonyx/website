@@ -1,53 +1,114 @@
+# ----- La Société
 [[main]]
-name = "Accueil"
-url = ""
-weight = 10
+name = "La société"
+identifier = "company"
+weight = 20
+# title = "Made with ❤️ by the Hugo Bootstrap Theme team"
 
 [[main]]
-name = "Qui sommes-nous ?"
-url = "about"
-weight = 20
-title = "Made with ❤️ by the Hugo Bootstrap Theme team"
+name = "Qui sommes nous ?"
+url = "tags/hugo"
+weight = 22
+parent = "company"
+
+[[main]]
+name = "L'équipe"
+url = "tags/hugo"
+weight = 24
+parent = "company"
+
+[[main]]
+name = "La culture d'entreprise"
+url = "tags/hugo"
+weight = 26
+parent = "company"
+
+[[main]]
+name = "Politique sociale"
+url = "tags/hugo"
+weight = 28
+parent = "company"
+
+# ----- Sections dynamiques
+
+[[main]]
+name = "Nos Expertises"
+identifier = "solutions"
+weight = 30
+
+[[main]]
+name = "Toutes"
+url = "tags/hugo"
+weight = 31
+parent = "solutions"
+
+[[main]]
+name = "Infrastructure"
+url = "tags/hugo"
+weight = 32
+parent = "solutions"
+
+[[main]]
+name = "CyberSécurité"
+url = "tags/hugo"
+weight = 34
+parent = "solutions"
+
+[[main]]
+name = "Plateformes Cloud / Containers"
+url = "tags/hugo"
+weight = 36
+parent = "solutions"
+
+[[main]]
+name = "On parle de nous"
+url = "events"
+weight = 40
+# title = "Made with ❤️ by the Hugo Bootstrap Theme team"
 
 [[main]]
 identifier = "blog"
 name = "Blog"
-weight = 40
-
-[[main]]
-name = "Tout"
-url = "post"
-weight = 100
-parent = "blog"
-
-[[main]]
-name = "Hugo"
-url = "tags/hugo"
-weight = 20
-parent = "blog"
-
-[[main]]
-name = "Bootstrap"
-url = "tags/bootstrap"
-weight = 30
-parent = "blog"
-
-[[main]]
-identifier = "docs"
-name = "Docs"
-url = "page"
+url = "docs"
 weight = 50
 
+[[main]]
+name = "On recrute !"
+url = "tags/hugo"
+weight = 90
+
+# ----- Sous-menu SOCIAL
 [[social]]
-  name = "GitHub"
-  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-github'><use href='/hugo-bootstrap-theme/images/feather/feather-sprite.svg#github'/></svg>"
-  url = "https://github.com/filipecarneiro/hugo-bootstrap-theme/"
+  name = "LinkedIn"
+  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-github'><use href='images/feather/feather-sprite.svg#linkedin'/></svg>"
+  url = "https://www.linkedin.com/company/duonyx/posts/?feedView=all"
   weight = 10
-  title = "Visit the GitHub project"
+  title = "Page LinkedIn"
 
 [[social]]
   name = "Twitter"
-  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-twitter'><use href='/hugo-bootstrap-theme/images/feather/feather-sprite.svg#twitter'/></svg>"
-  url = "https://twitter.com/jfilipecarneiro/"
+  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-twitter'><use href='images/feather/feather-sprite.svg#twitter'/></svg>"
+  url = "https://x.com/duonyx/"
   weight = 20
-  title = "Contact on Twitter"
+  title = "Suivez-nous sur Twitter/X"
+
+[[social]]
+  name = "YouTube"
+  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-github'><use href='images/feather/feather-sprite.svg#youtube'/></svg>"
+  url = "https://www.youtube.com/@Duonyx"
+  weight = 30
+  title = "Chaîne YouTube"
+
+[[social]]
+  name = "GitHub"
+  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-twitter'><use href='images/feather/feather-sprite.svg#github'/></svg>"
+  url = "https://github.com/duonyx"
+  weight = 40
+  title = "Compte Github"
+
+# [[social]]
+#   name = "Gitlab"
+#   pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-github'><use href='images/feather/feather-sprite.svg#gitlab'/></svg>"
+#   url = "https://gitlab.com/duonyx"
+#   weight = 50
+#   title = "Compte GitLab"
