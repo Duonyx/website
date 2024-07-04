@@ -1,29 +1,37 @@
 {{ define "main" }}
-
-<section class="section bd-masthead">
-  <div class="container-xxl">
-    <div class="col-md-8 mx-auto text-center my-5">
-      <img class="d-block mx-auto mb-3" src="{{ `images/duonyx-logo_black.png` | relURL }}" width="150" height="150" alt="Bootstrap">
-      <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1>
-      <p class="lead mb-4">{{ .Site.Params.Description }}</p>
-      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/filipecarneiro/hugo-bootstrap-theme" role="button">Get Started</a>
-      <p class="text-muted mb-0">Open-source MIT Licensed.</p>
+<section class="bd-masthead">
+  <!-- <section class="section bd-masthead"> -->
+  <section class="section">
+    <div class="container-xxl">
+      <div class="col-md-8 mx-auto text-center my-5">
+        <img class="d-block mx-auto mb-3" src="{{ `images/Duonyx_logo_2024_transparent.png` | relURL }}" width="811"
+          height="196" style="border-radius: 25px; opacity:1;" alt="Duonyx">
+        <!-- <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1> -->
+        <p class="lead mb-4">Restaurez la confiance en vos données</p>
+        <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/filipecarneiro/hugo-bootstrap-theme"
+          role="button">En savoir plus…</a>
+        <!-- <p class="text-muted mb-0">Open-source MIT Licensed.</p> -->
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section container my-3">
-  {{ partial "features" . }}
+  <section class="section container my-3">
+    {{ partial "features" . }}
+  </section>
 </section>
-
 <section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Latest Posts</h3>
+  <h3 class="text-secondary text-center my-5">Derniers articles</h3>
   {{ partial "latest-posts" . }}
 </section>
 
 <section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Featured Pages</h3>
+  <h3 class="text-secondary text-center my-5">Nos solutions à l'honneur</h3>
   {{ partial "featured-pages" . }}
 </section>
 
+<section class="section container my-3">
+<iframe src="https://www.welcometothejungle.com/fr/companies/duonyx/embed?c=3&l=2" width="100%" height="700px" frameborder="0" data-testid="widget-iframe"></iframe>
+</section>
+
 {{ end }}
+

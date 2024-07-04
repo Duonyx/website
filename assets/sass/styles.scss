@@ -1,6 +1,7 @@
 .home {
     --bd-purple: #4c0bce;
-    --bd-violet: #712cf9;
+    // --bd-violet: #712cf9;
+    --bd-violet: #9e72cf;
     --bd-accent: #ffe484;
     --bd-violet-rgb: 112.520718,44.062154,249.437846;
     --bd-accent-rgb: 255,228,132;
@@ -8,7 +9,12 @@
 
     .bd-masthead {
         padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+        // background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+        background-image: url(/images/cyber_bureau_lowcontrast.jpeg);
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
     }
 
     .btn-bd-primary {
@@ -18,7 +24,7 @@
         --bs-btn-border-color: var(--bd-violet);
         --bs-btn-border-radius: .5rem;
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-bg: hsl(260, 75%, 52%);
         --bs-btn-hover-border-color: #6528e0;
         --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
@@ -30,16 +36,18 @@
 .navbar {
     @extend .navbar-dark;
 
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
+    // --bd-violet-rgb: 112.520718,44.062154,249.437846;
+    --bd-violet-rgb: 158,114,207;
+    --bd-anthracite-rgb: 0,0,0;
     
     padding: .75rem 0;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
+    background-image: linear-gradient(to right, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-anthracite-rgb), 0.95));
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
 }
 
 .text-violet {
-    color: #6528e0;
+    color: #9e72cf;
 }
 
 .list {
